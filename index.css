@@ -15,6 +15,7 @@ a {
   color: var(--color-secondary);
   text-decoration: none;
   font-family: "Cascadia Code", sans-serif;
+  cursor: pointer;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -184,15 +185,32 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 3vw;
+  border-top: solid 1px #2f80ed;
+  padding: 2.5vw 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #2f80ed20, #2f80ed, #2f80ed20);
 }
 .project-wrapper {
-  height: 75vh;
   width: 90%;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   place-items: center;
   gap: 3vw;
 }
+
+h1 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.project-header {
+  text-align: center;
+}
+.project-header p {
+  font-size: 1.5rem;
+}
+
 .project-innerwrap {
   display: flex;
   flex-direction: column;
