@@ -25,9 +25,11 @@ body {
 }
 
 nav {
-  position: absolute;
+  z-index: 9001;
+  background-color: #0d0d0d;
+  position: sticky;
+  top: 0;
   width: 100%;
-  max-height: 5vh;
 }
 .nav_outer-wrapper {
   width: 100%;
@@ -186,8 +188,9 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 3vw;
+  padding: 2.5vw 0 10vw;
   border-top: solid 1px #2f80ed;
-  padding: 2.5vw 0;
+
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #2f80ed20, #2f80ed, #2f80ed20);
 }
@@ -253,13 +256,15 @@ h1 {
 .project-innerwrap.project-main > div h4 {
   font-weight: 700;
   font-size: 5rem;
-  color: #0d0d0d;
 }
 .project-innerwrap.project-main > div p {
   font-weight: 600;
   font-size: 3.6rem;
   max-width: 60%;
   line-height: 1.5;
+}
+.project-innerwrap.project-main > div p > span {
+  color: #0d0d0d;
 }
 .project-button-p1 {
   font-size: 1.2rem;
@@ -274,6 +279,14 @@ h1 {
   margin-top: auto;
   cursor: pointer;
 }
+.project-innerwrap.project-main > div > div {
+  display: flex;
+  gap: 1.5vw;
+  align-items: center;
+  justify-content: space-between;
+  color: #f2f2f2;
+}
+
 .project-innerwrap.project-sec {
   display: flex;
   align-items: end;
@@ -341,4 +354,58 @@ h1 {
   background: linear-gradient(to top, #21212100, #212121);
   z-index: 100;
   /* border:  solid red 1px; */
+}
+
+.project-wrapper.project2 {
+  display: none;
+
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.project-wrapper.project3 {
+  display: none;
+
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.about {
+  width: 100%;
+  background-color: #ffffff10;
+  padding: 5% 0;
+  border-top: solid 1px #2f80ed;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #2f80ed20, #2f80ed, #2f80ed20);
+}
+.about-wrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 5%;
+  gap: 3%;
+}
+
+.about-image {
+  position: relative;
+  display: flex;
+}
+.about-image img {
+  width: 100%;
+  z-index: 100;
+}
+
+.about-image-bg {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #2f80ed;
+  width: 80%;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
