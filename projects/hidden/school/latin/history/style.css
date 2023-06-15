@@ -337,6 +337,7 @@ nav {
   -moz-transition: all ease 0.3s;
   -ms-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
+  opacity: 1;
 }
 .expansion-map img:not(.zoomMap) {
   cursor: zoom-in;
@@ -606,21 +607,6 @@ width: fit-content;
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
-}
-
-#maxExpansion {
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  padding: 4rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  font-size: 2rem;
-}
-#maxExpansion img {
-  height: 80%;
-  width: fit-content;
 }
 
 @media screen and (max-width: 1800px) {
