@@ -142,7 +142,7 @@ window.addEventListener("keydown", (event) => {
     expansionTextTitle.textContent =
       "Die Geburt Roms: Aufstieg eines Stadtstaates";
     expansionTextParagraph.textContent =
-      "Im Jahr 500 v. Chr. markierte die Vertreibung der etruskischen Könige den Beginn eines neuen Kapitels in der Geschichte Roms. Die Gründung des Stadtstaates Rom auf der italischen Halbinsel ebnete den Weg für einen bemerkenswerten Aufstieg. Mit der Etablierung einer eigenen Regierung und eines eigenen politischen Systems begann Rom seinen unaufhaltsamen Aufstieg zu einer bedeutenden Macht in der Region. Dieses Ereignis legte den Grundstein für eine bemerkenswerte Zivilisation, die in den kommenden Jahrhunderten eine führende Rolle spielen sollte.";
+      "Im Jahr 500 v. Chr. markierte die Vertreibung der etruskischen Könige den Beginn eines neuen Kapitels in der Geschichte Roms. Die Gründung des Stadtstaates Rom auf der italienischen  Halbinsel ebnete den Weg für einen bemerkenswerten Aufstieg. Mit der Etablierung einer eigenen Regierung und eines eigenen politischen Systems begann Rom seinen unaufhaltsamen Aufstieg zu einer bedeutenden Macht in der Region. Dieses Ereignis legte den Grundstein für eine bemerkenswerte Zivilisation, die in den kommenden Jahrhunderten eine führende Rolle spielen sollte.";
   }
   if (event.key === "2") {
     expansionMap.src = "./media/map/frame_01_delay-1.8s.gif";
