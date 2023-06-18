@@ -609,6 +609,29 @@ width: fit-content;
   -o-transform: translateX(-100%);
 }
 
+
+
+#reign{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:  start;
+  text-align: center;
+  position: relative;
+  background-image: url(./media/images/roman\ senator\ img.jpg);
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+#reign > h1{
+  font-size: 6.5rem;
+  margin-left: 5%;
+}
+#reign > audio{
+  align-self: center;
+}
+
 @media screen and (max-width: 1800px) {
   :root {
     font-size: 14px;
@@ -633,3 +656,5 @@ width: fit-content;
     overflow: hidden;
   }
 }
+
+
