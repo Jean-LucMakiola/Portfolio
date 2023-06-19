@@ -120,10 +120,14 @@ document
     expansionContainer.style.display = "flex";
   });
 
+
 var expansionTwo = document.getElementById("expansion2");
-document.getElementById("trigger").addEventListener("click", () => {
-  console.log(expansionTwo);
+document.getElementById("trigger1").addEventListener("click", () => {
   expansionTwo.classList.toggle("expansion2-active");
+});
+var expansionThree = document.getElementById("expansion3");
+document.getElementById("trigger2").addEventListener("click", () => {
+  expansionThree.classList.toggle("expansion3-active");
 });
 
 var expansionMapWrap = document.querySelector(".expansion-map-wrap");
