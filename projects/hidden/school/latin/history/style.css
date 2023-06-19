@@ -463,7 +463,7 @@ nav {
 #timeline-event-stemp-text8 {
   left: 90%;
 }
-#timeline-event-stemp-text-arrow{
+#timeline-event-stemp-text-arrow {
   right: -0.9%;
   top: 85%;
 }
@@ -471,7 +471,7 @@ nav {
 #timeline-arrow-wrap {
   position: absolute;
   right: 4%;
-  top: 50% ;
+  top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -482,16 +482,17 @@ nav {
   z-index: 1004;
   cursor: pointer;
 }
-#timeline-arrow{
-position: relative;
-height: fit-content;
-width: fit-content;
+#timeline-arrow {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
 }
-#timeline-arrow::before, #timeline-arrow::after{
+#timeline-arrow::before,
+#timeline-arrow::after {
   background-color: #ffffff;
-  height: 6px!important;
-  content:'';
-  width: 35px!important;
+  height: 6px !important;
+  content: "";
+  width: 35px !important;
   border-radius: 2000rem;
   -webkit-border-radius: 2000rem;
   -moz-border-radius: 2000rem;
@@ -499,23 +500,22 @@ width: fit-content;
   -o-border-radius: 2000rem;
   left: 0;
   position: absolute;
-  
 }
-#timeline-arrow::before{
+#timeline-arrow::before {
   transform: rotate(45deg) translateY(-250%);
   -webkit-transform: rotate(45deg) translateY(-250%);
   -moz-transform: rotate(45deg) translateY(-250%);
   -ms-transform: rotate(45deg) translateY(-250%);
   -o-transform: rotate(45deg) translateY(-250%);
 }
-#timeline-arrow::after{
+#timeline-arrow::after {
   transform: rotate(-45deg) translateY(250%);
   -webkit-transform: rotate(-45deg) translateY(250%);
   -moz-transform: rotate(-45deg) translateY(250%);
   -ms-transform: rotate(-45deg) translateY(250%);
   -o-transform: rotate(-45deg) translateY(250%);
 }
- .expansion-content {
+.expansion-content {
   display: flex;
   gap: 2rem;
   padding: 2rem;
@@ -602,18 +602,17 @@ width: fit-content;
   z-index: 10002;
   cursor: pointer;
 }
-#trigger1 > *{
- transform: rotate(180deg);
- -webkit-transform: rotate(180deg);
- -moz-transform: rotate(180deg);
- -ms-transform: rotate(180deg);
- -o-transform: rotate(180deg);
+#trigger1 > * {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 
-#trigger2{
+#trigger2 {
   left: 5%;
 }
-
 
 .expansion2-active {
   transform: translateX(-100%);
@@ -651,11 +650,11 @@ width: fit-content;
   padding: 4rem;
   font-size: 1.5rem;
 }
-#expansion3 img{
+#expansion3 img {
   width: 40%;
 }
 
-#expansion3 > div{
+#expansion3 > div {
   width: 40%;
 }
 
@@ -668,12 +667,11 @@ width: fit-content;
   line-height: 1.5;
 }
 
-
-#reign{
+#reign {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items:  start;
+  align-items: start;
   position: relative;
   background-image: url(./media/images/roman\ senator\ img.jpg);
   background-position: center top;
@@ -681,7 +679,7 @@ width: fit-content;
   height: 100vh;
 }
 
-.reign-inner-content{
+.reign-inner-content {
   position: absolute;
   right: 5%;
   max-width: 55vmax;
@@ -702,24 +700,24 @@ width: fit-content;
   -o-transition: all ease 0.5s;
   border: #000e0e 1px solid;
 }
-#reign-content-administration{
+#reign-content-administration {
   z-index: 999;
 }
-#reign-content-verfassung{
+#reign-content-verfassung {
   right: 8%;
   top: 15%;
   z-index: 1001;
 }
-.reign-inner-content.active{
+.reign-inner-content.active {
   display: flex;
   flex-direction: column;
 }
 
-.reign-inner-content > ul{
+.reign-inner-content > ul {
   margin-top: 3.5rem;
 }
 
-.reign-inner-content-close{
+.reign-inner-content-close {
   position: absolute;
   top: 0;
   width: 100%;
@@ -733,7 +731,7 @@ width: fit-content;
   height: 3rem;
   width: 100%;
 }
-.close-button{
+.close-button {
   background-color: #000e0e;
   height: 100%;
   aspect-ratio: 1/1;
@@ -754,19 +752,19 @@ width: fit-content;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.close-button:hover{
+.close-button:hover {
   background-color: red;
 }
-.reign-header{
-   display: flex;
-   align-items: center;
-}
-.reign-open-extra-content{
+.reign-header {
   display: flex;
   align-items: center;
-cursor: pointer;
 }
-.reign-open-extra-content img{
+.reign-open-extra-content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.reign-open-extra-content img {
   width: 30px;
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -779,11 +777,11 @@ cursor: pointer;
   -ms-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
 }
-.reign-open-extra-content.active img{
+.reign-open-extra-content.active img {
   transform: rotate(-90deg);
 }
 
-.reign-text{
+.reign-text {
   height: 0px;
   color: transparent;
   transition: all ease 0.5s;
@@ -794,19 +792,18 @@ cursor: pointer;
   display: none;
   font-size: 1.4rem;
 }
-.reign-text.active{
+.reign-text.active {
   height: fit-content;
   color: #ffffff;
   display: block;
 }
-.reign-nav ol{
+.reign-nav ol {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   font-size: 2rem;
 }
-.reign-nav{
-  
+.reign-nav {
   margin-left: 5vw;
   padding: 1.5vw 2vw;
   background-color: #252727;
@@ -816,14 +813,72 @@ cursor: pointer;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-.reign-nav > *{
+.reign-nav > * {
   cursor: pointer;
 }
-#reign > h1{
+#reign > h1 {
   font-size: 6.5rem;
   margin-left: 5%;
 }
 
+#people {
+  display: grid;
+  padding: 1% 2%;
+  gap: 2%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 5%;
+  line-height: 1.5;
+}
+#people > * {
+ 
+  text-align: justify;
+  background-color: #252727;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.people-inner1 {
+  grid-column: span 2;
+  grid-row: 1 1;
+}
+.people-inner1 > div{
+display: flex;
+gap: 3rem;
+}
+.people-inner1 > div  img{
+  max-height: 100%;
+}
+.people-inner1 > div label{
+  font-size: smaller;
+}
+.people-inner2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.people-inner3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#sulla{
+  height: 100vh;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  padding: 5%;
+  background: url(./media/images/abstract-background-beige-brown-grunge-material-old-paper_213524-129.avif) center / cover;
+color: #000e0e;
+font-weight: 600;
+}
 
 
 @media screen and (max-width: 1800px) {
@@ -850,5 +905,3 @@ cursor: pointer;
     overflow: hidden;
   }
 }
-
-
