@@ -838,6 +838,8 @@ nav {
   grid-template-rows: 1fr 1fr;
   padding-top: 5%;
   line-height: 1.5;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 #people > * {
   text-align: justify;
