@@ -626,7 +626,7 @@ width: fit-content;
 .reign-inner-content{
   position: absolute;
   right: 5%;
-  width: 55vmax;
+  max-width: 55vmax;
   aspect-ratio: 8/5;
   top: 20%;
   background-color: #252727;
@@ -642,6 +642,15 @@ width: fit-content;
   -moz-transition: all ease 0.5s;
   -ms-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
+  border: #000e0e 1px solid;
+}
+#reign-content-administration{
+  z-index: 999;
+}
+#reign-content-verfassung{
+  right: 8%;
+  top: 15%;
+  z-index: 1001;
 }
 .reign-inner-content.active{
   display: flex;
@@ -732,10 +741,14 @@ cursor: pointer;
   color: #ffffff;
   display: block;
 }
-.reign-nav{
+.reign-nav ol{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  font-size: 2rem;
+}
+.reign-nav{
+  
   margin-left: 5vw;
   padding: 1.5vw 2vw;
   background-color: #252727;

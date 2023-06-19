@@ -228,3 +228,28 @@ document.getElementById("publicani").addEventListener("click", () => {
   document.getElementById("publicani").classList.toggle("active");
   document.getElementById("publicani-text").classList.toggle("active");
 });
+
+
+document.getElementById("reign-nav-element2").addEventListener("click", () => {
+  document
+    .getElementById("reign-content-verfassung")
+    .classList.add("active");
+});
+var closeButton2 = document.getElementById("close-button-2");
+closeButton2.addEventListener("click", () => {
+  document
+    .getElementById("reign-content-verfassung")
+    .classList.remove("active");
+});
+document.getElementById("Verwaltung").addEventListener("click", () => {
+  document.getElementById("Verwaltung").classList.toggle("active");
+  document.getElementById("Verwaltung_Content").classList.toggle("active");
+});
+document.getElementById("sicherheit").addEventListener("click", () => {
+  document.getElementById("sicherheit").classList.toggle("active");
+  document.getElementById("sicherheit_Content").classList.toggle("active");
+});
+document.getElementById("sozial").addEventListener("click", () => {
+  document.getElementById("sozial").classList.toggle("active");
+  document.getElementById("sozial_Content").classList.toggle("active");
+});
