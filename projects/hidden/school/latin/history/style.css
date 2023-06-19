@@ -27,6 +27,9 @@ body {
 main {
   scroll-snap-type: y mandatory;
 }
+main > * {
+  scroll-snap-align: start;
+}
 .__landing {
   background: url(./media/images/9ac67ab0-0001-0004-0000-000001146203_w1200_r1.33_fpx28.69_fpy55.01.jpg)
     no-repeat;
