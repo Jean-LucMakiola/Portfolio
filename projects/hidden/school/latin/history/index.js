@@ -199,3 +199,32 @@ window.addEventListener("keydown", (event) => {
       "Seine größte Ausdehnung erreichte das Römische Reich unter Nervas Nachfolger Trajan im Jahre 117, wobei Trajan, der als erster Kaiser nicht aus Italien, sondern aus den Provinzen stammte (aus Hispanien), als optimus princeps gefeiert wurde, als „bester Kaiser“. Dies entspricht den folgenden modernen Staaten (bzw. Teile derer): Spanien, Portugal, Italien, Griechenland, Tunesien, Türkei, Slowenien, Deutschland, Frankreich, Schweiz, Großbritannien, Andorra, Luxemburg, Albanien, Niederlande, Belgien, Kroatien, Bosnien-Herzegowina, Rumänien, Ungarn, Bulgarien, Kosovo, Nordmazedonien, Zypern, Ägypten, Isreal, Arabien, Syrien, Libyen , Marokko, Algerien, Libanon, Aserbaidschan, Georgien, Irak, Iran";
   }
 });
+
+var closeButton1 = document.getElementById("close-button-1");
+closeButton1.addEventListener("click", () => {
+  document
+    .getElementById("reign-content-administration")
+    .classList.remove("active");
+});
+
+document.getElementById("reign-nav-element1").addEventListener("click", () => {
+  document
+    .getElementById("reign-content-administration")
+    .classList.add("active");
+});
+document
+  .getElementById("Herrschaft_in_Italien")
+  .addEventListener("click", () => {
+    document.getElementById("Herrschaft_in_Italien").classList.toggle("active");
+    document
+      .getElementById("Herrschaft_in_Italien_Content")
+      .classList.toggle("active");
+  });
+document.getElementById("weitere_Herrschaft").addEventListener("click", () => {
+  document.getElementById("weitere_Herrschaft").classList.toggle("active");
+  document.getElementById("weitere_Herrschaft_text").classList.toggle("active");
+});
+document.getElementById("publicani").addEventListener("click", () => {
+  document.getElementById("publicani").classList.toggle("active");
+  document.getElementById("publicani-text").classList.toggle("active");
+});

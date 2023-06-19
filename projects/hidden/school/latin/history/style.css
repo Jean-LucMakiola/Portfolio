@@ -616,7 +616,6 @@ width: fit-content;
   flex-direction: column;
   justify-content: space-around;
   align-items:  start;
-  text-align: center;
   position: relative;
   background-image: url(./media/images/roman\ senator\ img.jpg);
   background-position: center top;
@@ -624,12 +623,120 @@ width: fit-content;
   height: 100vh;
 }
 
+.reign-inner-content{
+  position: absolute;
+  right: 5%;
+  width: 55vmax;
+  aspect-ratio: 8/5;
+  top: 20%;
+  background-color: #252727;
+  padding: 2%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  display: none;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.reign-inner-content.active{
+  display: flex;
+  flex-direction: column;
+}
+
+.reign-inner-content-close{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #888888;
+  left: 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  height: 3rem;
+  width: 100%;
+}
+.close-button{
+  background-color: #000e0e;
+  height: 100%;
+  aspect-ratio: 1/1;
+  margin-left: auto;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-image: url(./media/icons/close_white.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.close-button:hover{
+  background-color: red;
+}
+.reign-header{
+   display: flex;
+   align-items: center;
+}
+.reign-open-extra-content{
+  display: flex;
+  align-items: center;
+cursor: pointer;
+}
+.reign-open-extra-content img{
+  width: 30px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+.reign-open-extra-content.active img{
+  transform: rotate(-90deg);
+}
+
+.reign-text{
+  height: 0px;
+  color: transparent;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  display: none;
+  font-size: 1.4rem;
+}
+.reign-text.active{
+  height: fit-content;
+  color: #ffffff;
+  display: block;
+}
+.reign-nav{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5vw;
+}
 #reign > h1{
   font-size: 6.5rem;
   margin-left: 5%;
-}
-#reign > audio{
-  align-self: center;
 }
 
 @media screen and (max-width: 1800px) {
