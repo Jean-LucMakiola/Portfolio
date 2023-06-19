@@ -229,11 +229,8 @@ document.getElementById("publicani").addEventListener("click", () => {
   document.getElementById("publicani-text").classList.toggle("active");
 });
 
-
 document.getElementById("reign-nav-element2").addEventListener("click", () => {
-  document
-    .getElementById("reign-content-verfassung")
-    .classList.add("active");
+  document.getElementById("reign-content-verfassung").classList.add("active");
 });
 var closeButton2 = document.getElementById("close-button-2");
 closeButton2.addEventListener("click", () => {
@@ -252,4 +249,25 @@ document.getElementById("sicherheit").addEventListener("click", () => {
 document.getElementById("sozial").addEventListener("click", () => {
   document.getElementById("sozial").classList.toggle("active");
   document.getElementById("sozial_Content").classList.toggle("active");
+});
+document.getElementById("reign-nav-element2").addEventListener("click", () => {
+  document.getElementById("reign-content-verfassung").classList.add("active");
+});
+
+document.getElementById("reign-nav-element3").addEventListener("click", () => {
+  document.getElementById("reign-content-winner/losers").classList.add("active");
+});
+var closeButton3 = document.getElementById("close-button-3");
+closeButton3.addEventListener("click", () => {
+  document
+    .getElementById("reign-content-winner/losers")
+    .classList.remove("active");
+});
+document.getElementById("winner").addEventListener("click", () => {
+  document.getElementById("winner").classList.toggle("active");
+  document.getElementById("winner_Content").classList.toggle("active");
+});
+document.getElementById("loser").addEventListener("click", () => {
+  document.getElementById("loser").classList.toggle("active");
+  document.getElementById("loser_Content").classList.toggle("active");
 });
