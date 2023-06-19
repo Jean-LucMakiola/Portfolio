@@ -708,6 +708,11 @@ nav {
   top: 15%;
   z-index: 1001;
 }
+#reign-content-sicherheit {
+  right: 10%;
+  top: 12%;
+  z-index: 1003;
+}
 .reign-inner-content.active {
   display: flex;
   flex-direction: column;
