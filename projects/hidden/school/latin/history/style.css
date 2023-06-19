@@ -648,6 +648,10 @@ width: fit-content;
   flex-direction: column;
 }
 
+.reign-inner-content > ul{
+  margin-top: 3.5rem;
+}
+
 .reign-inner-content-close{
   position: absolute;
   top: 0;
@@ -732,7 +736,17 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 5vw;
+  margin-left: 5vw;
+  padding: 1.5vw 2vw;
+  background-color: #252727;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+.reign-nav > *{
+  cursor: pointer;
 }
 #reign > h1{
   font-size: 6.5rem;
