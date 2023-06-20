@@ -215,6 +215,7 @@ nav {
   background-color: #000e0e;
   height: 100vh;
   cursor: auto;
+  width: 100vw;
 }
 .__founding-container * {
   transition: all ease 0.3s;
@@ -237,6 +238,8 @@ nav {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 .card1-content-container h1 {
   font-size: 3rem;
@@ -245,21 +248,29 @@ nav {
   font-size: 2.5rem;
   color: #d7d7d7;
 }
+.card1-content-container iframe {
+  font-size: 1.75rem;
+  color: #b1b1b1;
+  text-align: justify;
+  aspect-ratio: 16/9;
+  height: 70vh;
+}
 .card1-content-container p {
   font-size: 1.75rem;
   color: #b1b1b1;
   text-align: justify;
 }
-
 .card1-content-image-wrap {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: space-evenly;
+  align-items: center;
 }
 .card1-content-image-wrap img {
-  max-height: 40%;
-  aspect-ratio: 1/1;
+  max-width:100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -303,6 +314,9 @@ nav {
   }
   :root {
     font-size: 12px;
+  }
+  .card1-content-image-wrap img {
+    max-width: 40%;
   }
 }
 
@@ -467,8 +481,10 @@ nav {
   left: 90%;
 }
 #timeline-event-stemp-text-arrow {
-  right: -0.9%;
-  top: 85%;
+  left: 98%;
+  top: 100%;
+ width: max-content;
+  display: flex;
 }
 
 #timeline-arrow-wrap {
