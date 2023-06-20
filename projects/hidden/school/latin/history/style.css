@@ -268,7 +268,7 @@ nav {
   align-items: center;
 }
 .card1-content-image-wrap img {
-  max-width:100%;
+  max-width: 100%;
   object-fit: cover;
   aspect-ratio: 16/9;
   border-radius: 2rem;
@@ -483,7 +483,7 @@ nav {
 #timeline-event-stemp-text-arrow {
   left: 98%;
   top: 100%;
- width: max-content;
+  width: max-content;
   display: flex;
 }
 
@@ -585,9 +585,39 @@ nav {
   align-items: center;
   gap: 4rem;
   padding: 4rem;
+  flex-direction: column;
 }
+.expansion-video {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.expansion-video video {
+  display: flex;
+  width: 95vw;
+  aspect-ratio: 16/9;
+}
+.expansion-video h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #expansion2 > * {
-  width: 45%;
+  border-radius: 400rem;
+  -webkit-border-radius: 400rem;
+  -moz-border-radius: 400rem;
+  -ms-border-radius: 400rem;
+  -o-border-radius: 400rem;
+  background: #252727;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem;
+}
+#expansion2 audio {
+  padding: 1px;
 }
 
 #expansion2 h4 {
@@ -666,15 +696,8 @@ nav {
   justify-content: center;
   text-align: justify;
   gap: 4rem;
-  padding: 4rem;
+  padding: 2.5vw;
   font-size: 1.5rem;
-}
-#expansion3 img {
-  width: 40%;
-}
-
-#expansion3 > div {
-  width: 40%;
 }
 
 #expansion3 h4 {
@@ -727,7 +750,7 @@ nav {
   top: 15%;
   z-index: 1001;
 }
-#reign-content-sicherheit {
+.reign-content-winnerlosers {
   right: 10%;
   top: 12%;
   z-index: 1003;
@@ -845,6 +868,10 @@ nav {
   margin-left: 5%;
 }
 
+#reign audio {
+  margin: 1.5rem 0;
+}
+
 #people {
   display: grid;
   padding: 1% 2%;
@@ -897,14 +924,19 @@ nav {
 #sulla {
   height: 100vh;
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.8;
   padding: 5%;
-  background: url(./media/images/abstract-background-beige-brown-grunge-material-old-paper_213524-129.avif)
-    center / cover;
-  color: #000e0e;
-  font-weight: 600;
+  font-weight: 400;
+  background: #252727;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
+#sulla img{
+  width: 50%;
+}
+
 
 @media screen and (max-width: 1800px) {
   :root {
@@ -1063,4 +1095,25 @@ footer a {
 
 .logo:hover {
   scale: 1.03;
+}
+
+@media screen and (max-width: 1920px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1660px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  :root {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  :root {
+    font-size: 8px;
+  }
 }
