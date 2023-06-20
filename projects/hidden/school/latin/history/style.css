@@ -873,12 +873,11 @@ nav {
 }
 
 #people {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 1% 2%;
   gap: 2%;
   height: 100vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   padding-top: 5%;
   line-height: 1.5;
   max-height: 100vh;
@@ -897,9 +896,10 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 .people-inner1 {
-  grid-column: span 2;
+
   grid-row: 1 1;
 }
 .people-inner1 > div {
@@ -936,6 +936,8 @@ nav {
 #sulla img{
   width: 50%;
 }
+
+/* FOOTER */
 
 
 @media screen and (max-width: 1800px) {
@@ -987,7 +989,7 @@ footer a {
   flex-direction: column;
 }
 .footer-inner-col1 > img {
-  width: 40%;
+  width: 30%;
   align-self: flex-start;
 }
 .footer-inner-col2,
