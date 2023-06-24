@@ -90,14 +90,14 @@ nav {
   -ms-transition: all ease 0.9s;
   -o-transition: all ease 0.9s;
 }
-.nav_col:not(.logo):hover {
+.nav_col:not(.nav-logo):hover {
   border: solid 1px #ffffff;
   transform: scale(1.1);
 }
 .nav_col:hover a {
   color: #2f80ed;
 }
-.nav_col.logo:hover {
+.nav_col.nav-logo:hover {
   transform: scale(1.1);
 }
 .nav_col {
